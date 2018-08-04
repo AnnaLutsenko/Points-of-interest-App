@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95A4ECE62115AC9B00BD46FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */; };
+		95A4ECEB2115AC9B00BD46FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A4ECE92115AC9B00BD46FF /* Main.storyboard */; };
+		95A4ECF02115AC9D00BD46FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A4ECEE2115AC9D00BD46FF /* LaunchScreen.storyboard */; };
+		95A4ECF82115ACE600BD46FF /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ECF72115ACE600BD46FF /* SearchTableViewController.swift */; };
+		95A4ECFA2115B15600BD46FF /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ECF92115B15600BD46FF /* PlaceTableViewCell.swift */; };
+		95A4ECFC211607A800BD46FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A4ECFB211607A800BD46FF /* Assets.xcassets */; };
+		95A4ED03211624E500BD46FF /* PlaceInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ED02211624E500BD46FF /* PlaceInfoTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95A4ECE22115AC9B00BD46FF /* PointsOfIntrerest App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PointsOfIntrerest App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95A4ECEA2115AC9B00BD46FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95A4ECEF2115AC9D00BD46FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95A4ECF12115AC9D00BD46FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95A4ECF72115ACE600BD46FF /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		95A4ECF92115B15600BD46FF /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		95A4ECFB211607A800BD46FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95A4ED02211624E500BD46FF /* PlaceInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95A4ECDF2115AC9B00BD46FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95A4ECD92115AC9B00BD46FF = {
+			isa = PBXGroup;
+			children = (
+				95A4ECE42115AC9B00BD46FF /* PointsOfIntrerest App */,
+				95A4ECE32115AC9B00BD46FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95A4ECE32115AC9B00BD46FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95A4ECE22115AC9B00BD46FF /* PointsOfIntrerest App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95A4ECE42115AC9B00BD46FF /* PointsOfIntrerest App */ = {
+			isa = PBXGroup;
+			children = (
+				95A4ECFD21161CB000BD46FF /* SearchScreen */,
+				95A4ED0121161D0E00BD46FF /* PlaceInfoScreen */,
+				95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */,
+				95A4ECE92115AC9B00BD46FF /* Main.storyboard */,
+				95A4ECEE2115AC9D00BD46FF /* LaunchScreen.storyboard */,
+				95A4ECFB211607A800BD46FF /* Assets.xcassets */,
+				95A4ECF12115AC9D00BD46FF /* Info.plist */,
+			);
+			path = "PointsOfIntrerest App";
+			sourceTree = "<group>";
+		};
+		95A4ECFD21161CB000BD46FF /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				95A4ECFE21161CCC00BD46FF /* PlaceCell */,
+				95A4ECF72115ACE600BD46FF /* SearchTableViewController.swift */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		95A4ECFE21161CCC00BD46FF /* PlaceCell */ = {
+			isa = PBXGroup;
+			children = (
+				95A4ECF92115B15600BD46FF /* PlaceTableViewCell.swift */,
+			);
+			path = PlaceCell;
+			sourceTree = "<group>";
+		};
+		95A4ED0121161D0E00BD46FF /* PlaceInfoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				95A4ED02211624E500BD46FF /* PlaceInfoTableViewController.swift */,
+			);
+			path = PlaceInfoScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95A4ECE12115AC9B00BD46FF /* PointsOfIntrerest App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95A4ECF42115AC9D00BD46FF /* Build configuration list for PBXNativeTarget "PointsOfIntrerest App" */;
+			buildPhases = (
+				95A4ECDE2115AC9B00BD46FF /* Sources */,
+				95A4ECDF2115AC9B00BD46FF /* Frameworks */,
+				95A4ECE02115AC9B00BD46FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PointsOfIntrerest App";
+			productName = "PointsOfIntrerest App";
+			productReference = 95A4ECE22115AC9B00BD46FF /* PointsOfIntrerest App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95A4ECDA2115AC9B00BD46FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Anna;
+				TargetAttributes = {
+					95A4ECE12115AC9B00BD46FF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 95A4ECDD2115AC9B00BD46FF /* Build configuration list for PBXProject "PointsOfIntrerest App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95A4ECD92115AC9B00BD46FF;
+			productRefGroup = 95A4ECE32115AC9B00BD46FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95A4ECE12115AC9B00BD46FF /* PointsOfIntrerest App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95A4ECE02115AC9B00BD46FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95A4ECF02115AC9D00BD46FF /* LaunchScreen.storyboard in Resources */,
+				95A4ECFC211607A800BD46FF /* Assets.xcassets in Resources */,
+				95A4ECEB2115AC9B00BD46FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95A4ECDE2115AC9B00BD46FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95A4ECE62115AC9B00BD46FF /* AppDelegate.swift in Sources */,
+				95A4ED03211624E500BD46FF /* PlaceInfoTableViewController.swift in Sources */,
+				95A4ECF82115ACE600BD46FF /* SearchTableViewController.swift in Sources */,
+				95A4ECFA2115B15600BD46FF /* PlaceTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95A4ECE92115AC9B00BD46FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95A4ECEA2115AC9B00BD46FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95A4ECEE2115AC9D00BD46FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95A4ECEF2115AC9D00BD46FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95A4ECF22115AC9D00BD46FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95A4ECF32115AC9D00BD46FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95A4ECF52115AC9D00BD46FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK6SM6Q23J;
+				INFOPLIST_FILE = "PointsOfIntrerest App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lutsenko-anna.PointsOfIntrerest-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95A4ECF62115AC9D00BD46FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK6SM6Q23J;
+				INFOPLIST_FILE = "PointsOfIntrerest App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lutsenko-anna.PointsOfIntrerest-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95A4ECDD2115AC9B00BD46FF /* Build configuration list for PBXProject "PointsOfIntrerest App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95A4ECF22115AC9D00BD46FF /* Debug */,
+				95A4ECF32115AC9D00BD46FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95A4ECF42115AC9D00BD46FF /* Build configuration list for PBXNativeTarget "PointsOfIntrerest App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95A4ECF52115AC9D00BD46FF /* Debug */,
+				95A4ECF62115AC9D00BD46FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95A4ECDA2115AC9B00BD46FF /* Project object */;
+}
