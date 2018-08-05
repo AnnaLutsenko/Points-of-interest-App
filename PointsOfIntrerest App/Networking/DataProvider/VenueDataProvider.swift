@@ -60,11 +60,12 @@ class VenueDataProvider {
             .get()
             .venues(venueId)
             .run()
-            .validate(statusCode: 200..<300)
+//            .validate(statusCode: 200..<300)
             .responseData { (response) in
                 switch response.result {
                 case .success(let data):
                     do {
+                        debugPrint(String(data: data, encoding: .utf8)!)
                         let venueResponse = try JSONDecoder().decode(FoursquareResponse<VenueDetailsWrapper>.self, from: data)
                         let venue = Venue(model: venueResponse.response.venue)
                         

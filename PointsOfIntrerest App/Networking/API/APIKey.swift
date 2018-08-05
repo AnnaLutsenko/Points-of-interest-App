@@ -18,8 +18,8 @@ protocol APIKey {
 struct FoursquareAPIKey: APIKey {
     
     #if DEBUG
-    static var clientId: String = "2Z1HHJDE2H5EWV5AWTF4PXBIOBLQTXVLEDQI41T2UGAL3SQF"
-    static var clientSecret: String = "AFHHTVRWP0YPHAFYO1NBFWCAXW0CJRY2GCRXWSBCOZWLEVBN"
+    static var clientId: String = "KC10KK1YPL0KVMZRKALGZQR2F0XZIRZ2KSRC1T2ACLWYWKEM"
+    static var clientSecret: String = "MYS4IKXUFAT0OIIE4LG22QL5NKPTVUPOEWFEIDD0PEPZ3VKU"
     static var baseURL: String = "https://api.foursquare.com/v2/"
     static var version: String {
         let dateFormatter = DateFormatter()

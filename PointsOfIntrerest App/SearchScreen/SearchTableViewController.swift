@@ -19,6 +19,7 @@ class SearchTableViewController: UITableViewController {
     
     /// Models
     var venues: [Venue] = []
+    var index = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +27,22 @@ class SearchTableViewController: UITableViewController {
     }
 
     func registerCell() {
-//        tableView.rowHeight = UITableViewAutomaticDimension
-//        tableView.estimatedRowHeight = 200
-        
         tableView.register(PlaceTableViewCell.self, forCellReuseIdentifier: PlaceTableViewCell.reuseID)
     }
+    
+//        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            guard let navController = segue.destination as? UINavigationController,
+//                let vc = navController.topViewController as? PlaceInfoTableViewController else {
+//                    fatalError("DetailViewController")
+//            }
+//            
+//            // Manage the display mode button
+//            vc.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+//            vc.navigationItem.leftItemsSupplementBackButton = true
+//            
+//            // Configure the secondary view controller
+//            vc.venue = venues[index]
+//        }
     
     // MARK: - Requests
     private func getVenues(_ query: String?) {
@@ -47,11 +59,9 @@ class SearchTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return venues.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -63,7 +73,7 @@ class SearchTableViewController: UITableViewController {
         //
         if let url = venue.categoryIconURL(size: ._44) {
             cell.photoImgView.kf.setImage(with: url, options: [.imageModifier(RenderingModeImageModifier(renderingMode: .alwaysTemplate))])
-            cell.photoImgView.tintColor = .blue 
+            cell.photoImgView.tintColor = .blue
         }
         cell.nameLbl.text = venue.model.name
         cell.addressLbl.text = venue.address
@@ -73,6 +83,10 @@ class SearchTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        index = indexPath.row
+        if let splitVC = splitViewController as? VenueSplitViewController {
+            splitVC.sentVenueToDetailVC(venues[indexPath.row])
+        }
     }
 }
 

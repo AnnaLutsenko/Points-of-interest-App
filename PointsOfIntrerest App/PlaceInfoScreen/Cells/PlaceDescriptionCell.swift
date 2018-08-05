@@ -9,7 +9,11 @@
 import UIKit
 
 struct DisplayDescription: DisplayObject {
-    var description: String
+    var description: String?
+    
+    init?(venue: Venue) {
+        self.description = venue.model.description
+    }
 }
 
 class PlaceDescriptionCell: DisplayObjectCell <DisplayDescription> {
@@ -42,43 +46,28 @@ class PlaceDescriptionCell: DisplayObjectCell <DisplayDescription> {
 
     //MARK: - Set Constraints
     private func setDescriptionConstraints() {
-        
-        let leadingConstraint = NSLayoutConstraint(
-            item: descriptionLbl,
-            attribute: .leading,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .leading,
-            multiplier: 1, constant: 8
-        )
-        
-        let trailingConstraint = NSLayoutConstraint(
-            item: descriptionLbl,
-            attribute: .trailing,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .trailing,
-            multiplier: 1, constant: 8
-        )
-        
-        let topConstraint = NSLayoutConstraint(
-            item: descriptionLbl,
-            attribute: .top,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .top,
-            multiplier: 1, constant: 16
-        )
-        
-        let bottomConstraint = NSLayoutConstraint(
-            item: descriptionLbl,
-            attribute: .bottom,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .bottom,
-            multiplier: 1, constant: 8
-        )
+        let views: [String: Any] = ["descriptionLbl": descriptionLbl]
+        var allConstraints: [NSLayoutConstraint] = []
         //
-        contentView.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint])
+        let metrics = [
+            "padding": 8,
+            "textWidth": UIScreen.main.bounds.size.width - 32]
+        //
+        let topRowHorizontalFormat = "H:|-8-[descriptionLbl(textWidth)]-8-|"
+        
+        let topRowHorizontalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: topRowHorizontalFormat,
+            options: [.alignAllCenterY],
+            metrics: metrics,
+            views: views)
+        allConstraints += topRowHorizontalConstraints
+        //
+        let summaryHorizontalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "V:|-16-[descriptionLbl]-8-|",
+            metrics: metrics,
+            views: views)
+        allConstraints += summaryHorizontalConstraints
+        //
+        NSLayoutConstraint.activate(allConstraints)
     }
 }

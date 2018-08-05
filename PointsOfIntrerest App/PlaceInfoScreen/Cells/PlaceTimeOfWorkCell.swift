@@ -9,7 +9,11 @@
 import UIKit
 
 struct DisplayTimeOfWork: DisplayObject {
-    var time: String
+    var time: String?
+    
+    init?(venue: Venue) {
+        self.time = venue.isOpenTitle
+    }
 }
 
 class PlaceTimeOfWorkCell: DisplayObjectCell <DisplayTimeOfWork> {

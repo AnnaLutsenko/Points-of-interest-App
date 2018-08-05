@@ -7,27 +7,33 @@
 //
 
 import UIKit
-
+import CoreLocation
 class PlaceInfoTableViewController: UITableViewController {
     
+    /// Services
+    let venueDataService = VenueDataProvider()
+    
+    /// Models
     var objects: [DisplayObject] = []
+    var venue: Venue? {
+        didSet {
+            guard let v = venue else { return }
+            displayData(for: v)
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        initController()
+        registerCells()
     }
     
-    func initController() {
-        registerCells()
-        //
-        let name = DisplayName(name: "UTEUT", rating: "9.0", color: .blue)
-        let descr = DisplayDescription(description: "son neuon onuohu noun onteuhno eutnouno ontehun unouahcp uchcen forCellReuseIdentifier forCellReuseIdentifier forCellReuseIdentifier forCellReuseIdentifier forCellReuseIdentifier")
-        let time = DisplayTimeOfWork(time: "Open from: 10:00 till 20:00")
-        let durationTime = DisplayDurationOfTrip(durationTime: "2 hours")
-        objects.append(name)
-        objects.append(descr)
-        objects.append(time)
-        objects.append(durationTime)
+    func displayData(for venue: Venue) {
+        objects.removeAll()
+        DisplayName(venue: venue).flatMap { objects.append($0) }
+        DisplayDescription(venue: venue).flatMap { objects.append($0) }
+        DisplayTimeOfWork(venue: venue).flatMap { objects.append($0) }
+        DisplayMap(venue: venue).flatMap { objects.append($0)}
     }
     
     func registerCells() {
@@ -38,6 +44,20 @@ class PlaceInfoTableViewController: UITableViewController {
         tableView.register(PlaceDescriptionCell.self, forCellReuseIdentifier: PlaceDescriptionCell.reuseID)
         tableView.register(PlaceTimeOfWorkCell.self, forCellReuseIdentifier: PlaceTimeOfWorkCell.reuseID)
         tableView.register(PlaceDurationCell.self, forCellReuseIdentifier: PlaceDurationCell.reuseID)
+        tableView.register(MapCell.self, forCellReuseIdentifier: MapCell.reuseID)
+    }
+    
+    func fetchData() {
+        guard let venue = venue else { return }
+        
+        venueDataService.getVenueDetails(venueId: venue.model.id) { [weak self] (results) in
+            switch results {
+            case .success(let venue):
+                self?.venue = venue
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -66,6 +86,10 @@ class PlaceInfoTableViewController: UITableViewController {
         } else if let durationTime = obj as? DisplayDurationOfTrip {
             let dataCell = tableView.dequeueReusableCell(withIdentifier: PlaceDurationCell.reuseID) as? PlaceDurationCell
             dataCell?.displayData(durationTime)
+            cell = dataCell
+        } else if let map = obj as? DisplayMap {
+            let dataCell = tableView.dequeueReusableCell(withIdentifier: MapCell.reuseID) as? MapCell
+            dataCell?.displayData(map)
             cell = dataCell
         }
         

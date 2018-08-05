@@ -91,8 +91,10 @@ extension Venue {
     }
     
     var ratingColor: UIColor? {
-        // let colorStr = model.ratingColor
-        return .black
+        guard let colorStr = model.ratingColor else {
+            return UIColor.black
+        }
+        return UIColor(hex: colorStr)
     }
 }
 

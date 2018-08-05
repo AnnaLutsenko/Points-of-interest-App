@@ -36,6 +36,8 @@
 		95BB85E221175B87008C1A3B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DE21175B87008C1A3B /* APIClient.swift */; };
 		95BB85E321175B87008C1A3B /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DF21175B87008C1A3B /* APIKey.swift */; };
 		95BB85E621175B90008C1A3B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85E521175B90008C1A3B /* LocationService.swift */; };
+		95BB85E921178D0D008C1A3B /* VenueSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85E821178D0D008C1A3B /* VenueSplitViewController.swift */; };
+		95BB85EB211791DE008C1A3B /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85EA211791DE008C1A3B /* UIColor+Ext.swift */; };
 		B042BDF167B31E090DCF89AA /* Pods_PointsOfIntrerest_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F735857672F20FB8AFC91C /* Pods_PointsOfIntrerest_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		95BB85DE21175B87008C1A3B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		95BB85DF21175B87008C1A3B /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		95BB85E521175B90008C1A3B /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		95BB85E821178D0D008C1A3B /* VenueSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSplitViewController.swift; sourceTree = "<group>"; };
+		95BB85EA211791DE008C1A3B /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		BF2EF010C3FDEF6C8B5462D0 /* Pods-PointsOfIntrerest App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointsOfIntrerest App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App.debug.xcconfig"; sourceTree = "<group>"; };
 		C4F735857672F20FB8AFC91C /* Pods_PointsOfIntrerest_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PointsOfIntrerest_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +137,7 @@
 				95A4ED0121161D0E00BD46FF /* PlaceInfoScreen */,
 				95BB85E721175B9E008C1A3B /* Utils */,
 				95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */,
+				95BB85EA211791DE008C1A3B /* UIColor+Ext.swift */,
 				95A4ECE92115AC9B00BD46FF /* Main.storyboard */,
 				95A4ECEE2115AC9D00BD46FF /* LaunchScreen.storyboard */,
 				95A4ECFB211607A800BD46FF /* Assets.xcassets */,
@@ -146,6 +151,7 @@
 			children = (
 				95A4ECFE21161CCC00BD46FF /* PlaceCell */,
 				95A4ECF72115ACE600BD46FF /* SearchTableViewController.swift */,
+				95BB85E821178D0D008C1A3B /* VenueSplitViewController.swift */,
 			);
 			path = SearchScreen;
 			sourceTree = "<group>";
@@ -403,12 +409,14 @@
 				95BB85E221175B87008C1A3B /* APIClient.swift in Sources */,
 				95BB85D321175B33008C1A3B /* PhotoModel.swift in Sources */,
 				95A4ED082116431E00BD46FF /* MapCell.swift in Sources */,
+				95BB85E921178D0D008C1A3B /* VenueSplitViewController.swift in Sources */,
 				9533EDD52116EACC00660ED2 /* PlaceNameCell.swift in Sources */,
 				95A4ED03211624E500BD46FF /* PlaceInfoTableViewController.swift in Sources */,
 				95BB85D021175B33008C1A3B /* FoursquareResponse.swift in Sources */,
 				9533EDD12116E60900660ED2 /* Constants.swift in Sources */,
 				9533EDD921170D0600660ED2 /* PlaceTimeOfWorkCell.swift in Sources */,
 				95BB85E321175B87008C1A3B /* APIKey.swift in Sources */,
+				95BB85EB211791DE008C1A3B /* UIColor+Ext.swift in Sources */,
 				95A4ECF82115ACE600BD46FF /* SearchTableViewController.swift in Sources */,
 				95BB85D621175B33008C1A3B /* PhotoGroup.swift in Sources */,
 				95BB85E621175B90008C1A3B /* LocationService.swift in Sources */,

@@ -25,6 +25,16 @@
                                 <outlet property="delegate" destination="GGa-DL-Sly" id="WLn-aE-MRU"/>
                             </connections>
                         </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlaceTableViewCell" id="96w-E0-WrL" customClass="PlaceTableViewCell" customModule="PointsOfIntrerest_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="96w-E0-WrL" id="DSr-Wy-41X">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="GGa-DL-Sly" id="Vco-fi-ANa"/>
                             <outlet property="delegate" destination="GGa-DL-Sly" id="ShL-Ln-vXJ"/>
@@ -55,13 +65,13 @@
             </objects>
             <point key="canvasLocation" x="658" y="-686"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Venue Split View Controller-->
         <scene sceneID="Zow-lL-0xP">
             <objects>
-                <splitViewController id="xij-wX-fJK" sceneMemberID="viewController">
+                <splitViewController id="xij-wX-fJK" customClass="VenueSplitViewController" customModule="PointsOfIntrerest_App" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="8Dq-KO-D2s" kind="relationship" relationship="masterViewController" id="04k-c9-PH3"/>
-                        <segue destination="aTI-bc-UfV" kind="relationship" relationship="detailViewController" id="7Di-Qh-OEO"/>
+                        <segue destination="MCf-Np-DXn" kind="relationship" relationship="detailViewController" id="7Di-Qh-OEO"/>
+                        <segue destination="8Dq-KO-D2s" kind="relationship" relationship="masterViewController" id="XEX-sR-cWH"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONC-0q-bdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -91,8 +101,27 @@
                             <outlet property="delegate" destination="aTI-bc-UfV" id="Pj4-Wh-eNY"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Qay-9e-msC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1a-KS-czc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="80.50974512743629"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cwh-Jf-uDW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MCf-Np-DXn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UA8-Oa-oFS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aTI-bc-UfV" kind="relationship" relationship="rootViewController" id="SEy-yp-DYr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ju-GJ-umg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="657" y="81"/>
         </scene>

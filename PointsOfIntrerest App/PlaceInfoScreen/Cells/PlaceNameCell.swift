@@ -10,8 +10,19 @@ import UIKit
 
 struct DisplayName: DisplayObject {
     var name: String
-    var rating: String
-    var color: UIColor
+    var rating: String?
+    var color: UIColor?
+    
+    init?(venue: Venue) {
+        self.name = venue.model.name
+        
+        if let rating = venue.rating {
+            self.rating = String(rating)
+        } else {
+            self.rating = nil 
+        }
+        self.color = venue.ratingColor
+    }
 }
 
 class PlaceNameCell: DisplayObjectCell <DisplayName> {
