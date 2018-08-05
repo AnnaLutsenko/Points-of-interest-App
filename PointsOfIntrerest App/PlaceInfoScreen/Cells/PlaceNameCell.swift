@@ -36,20 +36,15 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        //
         contentView.addSubview(nameLbl)
         contentView.addSubview(ratingLbl)
+        setNameConstraints()
+        setRatingConstraints()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        //
-        setNameConstraints()
-        setRatingConstraints()
     }
     
     override func displayData(_ displayObj: DisplayName) {

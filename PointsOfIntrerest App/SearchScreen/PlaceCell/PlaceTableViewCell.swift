@@ -38,22 +38,18 @@ class PlaceTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        //
         contentView.addSubview(photoImgView)
         contentView.addSubview(titleLbl)
         contentView.addSubview(subTitleLbl)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
         //
         setImgViewConstraints()
         setTitleLblConstraints()
         setSubTitleLblConstraints()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     //MARK: - Set Constraints
