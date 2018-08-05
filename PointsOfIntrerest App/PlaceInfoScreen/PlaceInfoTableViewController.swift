@@ -9,27 +9,44 @@
 import UIKit
 
 class PlaceInfoTableViewController: UITableViewController {
+    
+    var objects: [DisplayObject] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        initController()
+    }
+    
+    func initController() {
+        registerCells()
+        //
+        let name = DisplayName(name: "UTEUT", rating: "9.0", color: .blue)
+        objects.append(name)
+    }
+    
+    func registerCells() {
+        tableView.register(PlaceNameCell.self, forCellReuseIdentifier: PlaceNameCell.reuseID)
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return objects.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        var cell: UITableViewCell?
 
-        // Configure the cell...
+        let obj = objects[indexPath.row]
 
-        return cell
+        if let name = obj as? DisplayName {
+           let dataCell = tableView.dequeueReusableCell(withIdentifier: PlaceNameCell.reuseID) as? PlaceNameCell
+            dataCell?.displayData(name)
+            cell = dataCell
+        }
+        
+        return cell ?? UITableViewCell()
     }
 
 }

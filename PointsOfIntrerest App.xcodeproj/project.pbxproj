@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9533EDD12116E60900660ED2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533EDD02116E60900660ED2 /* Constants.swift */; };
+		9533EDD32116EA1100660ED2 /* DisplayObjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533EDD22116EA1100660ED2 /* DisplayObjectCell.swift */; };
+		9533EDD52116EACC00660ED2 /* PlaceNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533EDD42116EACC00660ED2 /* PlaceNameCell.swift */; };
 		95A4ECE62115AC9B00BD46FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */; };
 		95A4ECEB2115AC9B00BD46FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A4ECE92115AC9B00BD46FF /* Main.storyboard */; };
 		95A4ECF02115AC9D00BD46FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A4ECEE2115AC9D00BD46FF /* LaunchScreen.storyboard */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		78A3F55977CDB89648CEE213 /* Pods-PointsOfIntrerest App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointsOfIntrerest App.release.xcconfig"; path = "Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App.release.xcconfig"; sourceTree = "<group>"; };
+		9533EDD02116E60900660ED2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9533EDD22116EA1100660ED2 /* DisplayObjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayObjectCell.swift; sourceTree = "<group>"; };
+		9533EDD42116EACC00660ED2 /* PlaceNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNameCell.swift; sourceTree = "<group>"; };
 		95A4ECE22115AC9B00BD46FF /* PointsOfIntrerest App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PointsOfIntrerest App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A4ECEA2115AC9B00BD46FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 				95A4ECFD21161CB000BD46FF /* SearchScreen */,
 				95A4ED0121161D0E00BD46FF /* PlaceInfoScreen */,
 				95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */,
+				9533EDD02116E60900660ED2 /* Constants.swift */,
 				95A4ECE92115AC9B00BD46FF /* Main.storyboard */,
 				95A4ECEE2115AC9D00BD46FF /* LaunchScreen.storyboard */,
 				95A4ECFB211607A800BD46FF /* Assets.xcassets */,
@@ -126,6 +133,8 @@
 		95A4ED0621163F4200BD46FF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				9533EDD22116EA1100660ED2 /* DisplayObjectCell.swift */,
+				9533EDD42116EACC00660ED2 /* PlaceNameCell.swift */,
 				95A4ED0421163F1A00BD46FF /* TextCell.swift */,
 				95A4ED072116431E00BD46FF /* MapCell.swift */,
 			);
@@ -247,9 +256,12 @@
 				95A4ECE62115AC9B00BD46FF /* AppDelegate.swift in Sources */,
 				95A4ED0521163F1A00BD46FF /* TextCell.swift in Sources */,
 				95A4ED082116431E00BD46FF /* MapCell.swift in Sources */,
+				9533EDD52116EACC00660ED2 /* PlaceNameCell.swift in Sources */,
 				95A4ED03211624E500BD46FF /* PlaceInfoTableViewController.swift in Sources */,
+				9533EDD12116E60900660ED2 /* Constants.swift in Sources */,
 				95A4ECF82115ACE600BD46FF /* SearchTableViewController.swift in Sources */,
 				95A4ECFA2115B15600BD46FF /* PlaceTableViewCell.swift in Sources */,
+				9533EDD32116EA1100660ED2 /* DisplayObjectCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
