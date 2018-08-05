@@ -46,7 +46,6 @@ class PlaceTableViewCell: UITableViewCell {
         contentView.addSubview(addressLbl)
         //
         setImgViewConstraints()
-//        setTitleLblConstraints()
         setSubTitleLblConstraints()
     }
     
@@ -56,16 +55,6 @@ class PlaceTableViewCell: UITableViewCell {
     
     //MARK: - Set Constraints
     private func setImgViewConstraints() {
-        /*
-        let leadingConstraint = NSLayoutConstraint(
-            item: photoImgView,
-            attribute: .leading,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .leading,
-            multiplier: 1, constant: 16
-        )
- */
         
         let verticalConstraint = NSLayoutConstraint(
             item: photoImgView,
@@ -93,41 +82,8 @@ class PlaceTableViewCell: UITableViewCell {
             attribute: .notAnAttribute,
             multiplier: 1, constant: 62
         )
- 
         //
         contentView.addConstraints([verticalConstraint, widthConstraint, heightConstraint])
-    }
-
-    private func setTitleLblConstraints() {
-        
-        let leadingConstraint = NSLayoutConstraint(
-            item: nameLbl,
-            attribute: .leading,
-            relatedBy: .equal,
-            toItem: photoImgView,
-            attribute: .trailing,
-            multiplier: 1, constant: 8
-        )
-        
-        let trailingConstraint = NSLayoutConstraint(
-            item: nameLbl,
-            attribute: .trailing,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .trailing,
-            multiplier: 1, constant: 8
-        )
-        
-        let topConstraint = NSLayoutConstraint(
-            item: nameLbl,
-            attribute: .top,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .top,
-            multiplier: 1, constant: 8
-        )
-        //
-        contentView.addConstraints([leadingConstraint, topConstraint, trailingConstraint])
     }
     
     private func setSubTitleLblConstraints() {
@@ -168,7 +124,6 @@ class PlaceTableViewCell: UITableViewCell {
             attribute: .trailing,
             multiplier: 1, constant: 0
         )
-        
         allConstraints += [leading, trailing]
         
         NSLayoutConstraint.activate(allConstraints)
