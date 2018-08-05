@@ -50,8 +50,7 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
         //
         contentView.addSubview(nameLbl)
         contentView.addSubview(ratingLbl)
-        setNameConstraints()
-        setRatingConstraints()
+        setConstraints()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -65,7 +64,14 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
     }
     
     //MARK: - Set Constraints
-    private func setNameConstraints() {
+    private func setConstraints() {
+        
+        let views: [String: Any] = ["nameLbl": nameLbl,
+                                    "ratingLbl": ratingLbl]
+        var allConstraints: [NSLayoutConstraint] = []
+        
+        let metrics = ["padding": 8.0,
+                       "textWidth": UIScreen.main.bounds.size.width - 16]
         
         let centerXConstraint = NSLayoutConstraint(
             item: nameLbl,
@@ -76,21 +82,7 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
             multiplier: 1, constant: 0
         )
         
-        let topConstraint = NSLayoutConstraint(
-            item: nameLbl,
-            attribute: .top,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .top,
-            multiplier: 1, constant: 8
-        )
-        //
-        contentView.addConstraints([centerXConstraint, topConstraint])
-    }
-    
-    private func setRatingConstraints() {
-        
-        let centerXConstraint = NSLayoutConstraint(
+        let centerXConstraint2 = NSLayoutConstraint(
             item: ratingLbl,
             attribute: .centerX,
             relatedBy: .equal,
@@ -99,25 +91,14 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
             multiplier: 1, constant: 0
         )
         
-        let topConstraint = NSLayoutConstraint(
-            item: ratingLbl,
-            attribute: .top,
-            relatedBy: .equal,
-            toItem: nameLbl,
-            attribute: .bottom,
-            multiplier: 1, constant: 8
-        )
-        
-        let bottomConstraint = NSLayoutConstraint(
-            item: ratingLbl,
-            attribute: .bottom,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .bottom,
-            multiplier: 1, constant: 8
-        )
+        let summaryVerticalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "V:|-8-[nameLbl]-[ratingLbl]-8-|",
+            metrics: metrics,
+            views: views)
         //
-        contentView.addConstraints([centerXConstraint, topConstraint, bottomConstraint])
+        allConstraints.append(centerXConstraint2)
+        allConstraints.append(centerXConstraint)
+        allConstraints += summaryVerticalConstraints
+        contentView.addConstraints(allConstraints)
     }
-
 }
