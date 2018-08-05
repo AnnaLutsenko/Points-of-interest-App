@@ -10,6 +10,8 @@ import UIKit
 
 class SearchTableViewController: UITableViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initController()
@@ -18,6 +20,8 @@ class SearchTableViewController: UITableViewController {
     func initController() {
         tableView.register(PlaceTableViewCell.self, forCellReuseIdentifier: PlaceTableViewCell.reuseID)
     }
+    
+    
     
     // MARK: - Table view data source
 
@@ -42,4 +46,13 @@ class SearchTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+}
+
+// MARK: - UISearchBarDelegate
+extension SearchTableViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
 }

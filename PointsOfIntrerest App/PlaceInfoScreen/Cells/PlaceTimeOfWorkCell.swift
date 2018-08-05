@@ -18,7 +18,7 @@ class PlaceTimeOfWorkCell: DisplayObjectCell <DisplayTimeOfWork> {
     let timeLbl: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 17)
+        label.font = UIFont.boldSystemFont(ofSize: 17)
         label.textColor = .black
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -42,8 +42,8 @@ class PlaceTimeOfWorkCell: DisplayObjectCell <DisplayTimeOfWork> {
     
     //MARK: - Set Constraints
     private enum Metrics {
-        static let padding: CGFloat = 16.0
-        static let textWidth: CGFloat = UIScreen.main.bounds.size.width - 32
+        static let padding: CGFloat = 8.0
+        static let textWidth: CGFloat = UIScreen.main.bounds.size.width - 16
     }
     
     private func setTimeConstraints() {
@@ -64,7 +64,7 @@ class PlaceTimeOfWorkCell: DisplayObjectCell <DisplayTimeOfWork> {
         allConstraints += topRowHorizontalConstraints
         //
         let summaryHorizontalConstraints = NSLayoutConstraint.constraints(
-            withVisualFormat: "V:|-padding-[timeLbl]-padding-|",
+            withVisualFormat: "V:|-16-[timeLbl]-padding-|",
             metrics: metrics,
             views: views)
         allConstraints += summaryHorizontalConstraints
