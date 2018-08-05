@@ -14,9 +14,13 @@
 		95A4ECFA2115B15600BD46FF /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ECF92115B15600BD46FF /* PlaceTableViewCell.swift */; };
 		95A4ECFC211607A800BD46FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A4ECFB211607A800BD46FF /* Assets.xcassets */; };
 		95A4ED03211624E500BD46FF /* PlaceInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ED02211624E500BD46FF /* PlaceInfoTableViewController.swift */; };
+		95A4ED0521163F1A00BD46FF /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ED0421163F1A00BD46FF /* TextCell.swift */; };
+		95A4ED082116431E00BD46FF /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ED072116431E00BD46FF /* MapCell.swift */; };
+		B042BDF167B31E090DCF89AA /* Pods_PointsOfIntrerest_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F735857672F20FB8AFC91C /* Pods_PointsOfIntrerest_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78A3F55977CDB89648CEE213 /* Pods-PointsOfIntrerest App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointsOfIntrerest App.release.xcconfig"; path = "Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App.release.xcconfig"; sourceTree = "<group>"; };
 		95A4ECE22115AC9B00BD46FF /* PointsOfIntrerest App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PointsOfIntrerest App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A4ECEA2115AC9B00BD46FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +30,10 @@
 		95A4ECF92115B15600BD46FF /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		95A4ECFB211607A800BD46FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A4ED02211624E500BD46FF /* PlaceInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoTableViewController.swift; sourceTree = "<group>"; };
+		95A4ED0421163F1A00BD46FF /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		95A4ED072116431E00BD46FF /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		BF2EF010C3FDEF6C8B5462D0 /* Pods-PointsOfIntrerest App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointsOfIntrerest App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App.debug.xcconfig"; sourceTree = "<group>"; };
+		C4F735857672F20FB8AFC91C /* Pods_PointsOfIntrerest_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PointsOfIntrerest_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B042BDF167B31E090DCF89AA /* Pods_PointsOfIntrerest_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190E8A718CBC91780425497E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF2EF010C3FDEF6C8B5462D0 /* Pods-PointsOfIntrerest App.debug.xcconfig */,
+				78A3F55977CDB89648CEE213 /* Pods-PointsOfIntrerest App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6189586B5B902BD493DB2019 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4F735857672F20FB8AFC91C /* Pods_PointsOfIntrerest_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		95A4ECD92115AC9B00BD46FF = {
 			isa = PBXGroup;
 			children = (
 				95A4ECE42115AC9B00BD46FF /* PointsOfIntrerest App */,
 				95A4ECE32115AC9B00BD46FF /* Products */,
+				190E8A718CBC91780425497E /* Pods */,
+				6189586B5B902BD493DB2019 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +117,19 @@
 		95A4ED0121161D0E00BD46FF /* PlaceInfoScreen */ = {
 			isa = PBXGroup;
 			children = (
+				95A4ED0621163F4200BD46FF /* Cells */,
 				95A4ED02211624E500BD46FF /* PlaceInfoTableViewController.swift */,
 			);
 			path = PlaceInfoScreen;
+			sourceTree = "<group>";
+		};
+		95A4ED0621163F4200BD46FF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				95A4ED0421163F1A00BD46FF /* TextCell.swift */,
+				95A4ED072116431E00BD46FF /* MapCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95A4ECF42115AC9D00BD46FF /* Build configuration list for PBXNativeTarget "PointsOfIntrerest App" */;
 			buildPhases = (
+				32F7FCC5B487351D73318F37 /* [CP] Check Pods Manifest.lock */,
 				95A4ECDE2115AC9B00BD46FF /* Sources */,
 				95A4ECDF2115AC9B00BD46FF /* Frameworks */,
 				95A4ECE02115AC9B00BD46FF /* Resources */,
+				C239794457989AD5B9449936 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,12 +200,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32F7FCC5B487351D73318F37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PointsOfIntrerest App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C239794457989AD5B9449936 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95A4ECDE2115AC9B00BD46FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				95A4ECE62115AC9B00BD46FF /* AppDelegate.swift in Sources */,
+				95A4ED0521163F1A00BD46FF /* TextCell.swift in Sources */,
+				95A4ED082116431E00BD46FF /* MapCell.swift in Sources */,
 				95A4ED03211624E500BD46FF /* PlaceInfoTableViewController.swift in Sources */,
 				95A4ECF82115ACE600BD46FF /* SearchTableViewController.swift in Sources */,
 				95A4ECFA2115B15600BD46FF /* PlaceTableViewCell.swift in Sources */,
@@ -310,6 +391,7 @@
 		};
 		95A4ECF52115AC9D00BD46FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2EF010C3FDEF6C8B5462D0 /* Pods-PointsOfIntrerest App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -329,6 +411,7 @@
 		};
 		95A4ECF62115AC9D00BD46FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78A3F55977CDB89648CEE213 /* Pods-PointsOfIntrerest App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
