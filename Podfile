@@ -7,5 +7,7 @@ target 'PointsOfIntrerest App' do
 
   # Pods for PointsOfIntrerest App
   pod 'GoogleMaps'
+  pod 'Alamofire'
+  pod 'Kingfisher'
 
 end

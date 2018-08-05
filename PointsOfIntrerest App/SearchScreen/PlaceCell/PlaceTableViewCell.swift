@@ -20,18 +20,20 @@ class PlaceTableViewCell: UITableViewCell {
         return img
     }()
 
-    let titleLbl: UILabel = {
+    let nameLbl: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.numberOfLines = 0
         label.textColor = .black
+        label.font = UIFont.boldSystemFont(ofSize: 17)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    let subTitleLbl: UILabel = {
+    let addressLbl: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 17)
+        label.numberOfLines = 0
         label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 17)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -40,11 +42,11 @@ class PlaceTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         //
         contentView.addSubview(photoImgView)
-        contentView.addSubview(titleLbl)
-        contentView.addSubview(subTitleLbl)
+        contentView.addSubview(nameLbl)
+        contentView.addSubview(addressLbl)
         //
         setImgViewConstraints()
-        setTitleLblConstraints()
+//        setTitleLblConstraints()
         setSubTitleLblConstraints()
     }
     
@@ -54,7 +56,7 @@ class PlaceTableViewCell: UITableViewCell {
     
     //MARK: - Set Constraints
     private func setImgViewConstraints() {
-        
+        /*
         let leadingConstraint = NSLayoutConstraint(
             item: photoImgView,
             attribute: .leading,
@@ -63,6 +65,7 @@ class PlaceTableViewCell: UITableViewCell {
             attribute: .leading,
             multiplier: 1, constant: 16
         )
+ */
         
         let verticalConstraint = NSLayoutConstraint(
             item: photoImgView,
@@ -90,15 +93,15 @@ class PlaceTableViewCell: UITableViewCell {
             attribute: .notAnAttribute,
             multiplier: 1, constant: 62
         )
+ 
         //
-        contentView.addConstraints([leadingConstraint, verticalConstraint, widthConstraint, heightConstraint])
+        contentView.addConstraints([verticalConstraint, widthConstraint, heightConstraint])
     }
 
     private func setTitleLblConstraints() {
-        titleLbl.translatesAutoresizingMaskIntoConstraints = false
         
         let leadingConstraint = NSLayoutConstraint(
-            item: titleLbl,
+            item: nameLbl,
             attribute: .leading,
             relatedBy: .equal,
             toItem: photoImgView,
@@ -106,38 +109,68 @@ class PlaceTableViewCell: UITableViewCell {
             multiplier: 1, constant: 8
         )
         
+        let trailingConstraint = NSLayoutConstraint(
+            item: nameLbl,
+            attribute: .trailing,
+            relatedBy: .equal,
+            toItem: contentView,
+            attribute: .trailing,
+            multiplier: 1, constant: 8
+        )
+        
         let topConstraint = NSLayoutConstraint(
-            item: titleLbl,
+            item: nameLbl,
             attribute: .top,
             relatedBy: .equal,
             toItem: contentView,
             attribute: .top,
-            multiplier: 1, constant: 16
+            multiplier: 1, constant: 8
         )
         //
-        contentView.addConstraints([leadingConstraint, topConstraint])
+        contentView.addConstraints([leadingConstraint, topConstraint, trailingConstraint])
     }
     
     private func setSubTitleLblConstraints() {
+        let views: [String: Any] = ["nameLbl": nameLbl,
+                                    "addressLbl": addressLbl,
+                                    "photoImgView" : photoImgView]
+        var allConstraints: [NSLayoutConstraint] = []
         
-        let leadingConstraint = NSLayoutConstraint(
-            item: subTitleLbl,
+        let metrics = ["padding": 8.0,
+                       "textWidth": UIScreen.main.bounds.size.width - 16]
+        
+        let topRowHorizontalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "H:|-[photoImgView]-[nameLbl(textWidth)]-|",
+            metrics: metrics,
+            views: views)
+        allConstraints += topRowHorizontalConstraints
+        
+        let summaryHorizontalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "V:|-[nameLbl]-[addressLbl]-|",
+            metrics: metrics,
+            views: views)
+        allConstraints += summaryHorizontalConstraints
+        
+        let leading = NSLayoutConstraint(
+            item: addressLbl,
             attribute: .leading,
             relatedBy: .equal,
-            toItem: photoImgView,
-            attribute: .trailing,
-            multiplier: 1, constant: 8
+            toItem: nameLbl,
+            attribute: .leading,
+            multiplier: 1, constant: 0
         )
         
-        let topConstraint = NSLayoutConstraint(
-            item: subTitleLbl,
-            attribute: .top,
+        let trailing = NSLayoutConstraint(
+            item: addressLbl,
+            attribute: .trailing,
             relatedBy: .equal,
-            toItem: titleLbl,
-            attribute: .bottom,
-            multiplier: 1, constant: 8
+            toItem: contentView,
+            attribute: .trailing,
+            multiplier: 1, constant: 0
         )
-        //
-        contentView.addConstraints([leadingConstraint, topConstraint])
+        
+        allConstraints += [leading, trailing]
+        
+        NSLayoutConstraint.activate(allConstraints)
     }
 }

@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct API_Keys {
     static let google = "AIzaSyAQrdms3HYHPR3JZgbs8HZccHna_SVaew0"
 }

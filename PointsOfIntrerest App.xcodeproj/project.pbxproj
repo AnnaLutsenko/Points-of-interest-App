@@ -22,6 +22,20 @@
 		95A4ED03211624E500BD46FF /* PlaceInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ED02211624E500BD46FF /* PlaceInfoTableViewController.swift */; };
 		95A4ED0521163F1A00BD46FF /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ED0421163F1A00BD46FF /* TextCell.swift */; };
 		95A4ED082116431E00BD46FF /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ED072116431E00BD46FF /* MapCell.swift */; };
+		95BB85D021175B33008C1A3B /* FoursquareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85C621175B33008C1A3B /* FoursquareResponse.swift */; };
+		95BB85D121175B33008C1A3B /* MetaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85C721175B33008C1A3B /* MetaModel.swift */; };
+		95BB85D221175B33008C1A3B /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85C821175B33008C1A3B /* Venue.swift */; };
+		95BB85D321175B33008C1A3B /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85CA21175B33008C1A3B /* PhotoModel.swift */; };
+		95BB85D421175B33008C1A3B /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85CB21175B33008C1A3B /* CategoryModel.swift */; };
+		95BB85D521175B33008C1A3B /* HoursModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85CC21175B33008C1A3B /* HoursModel.swift */; };
+		95BB85D621175B33008C1A3B /* PhotoGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85CD21175B33008C1A3B /* PhotoGroup.swift */; };
+		95BB85D721175B33008C1A3B /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85CE21175B33008C1A3B /* VenueModel.swift */; };
+		95BB85D821175B33008C1A3B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85CF21175B33008C1A3B /* LocationModel.swift */; };
+		95BB85E021175B87008C1A3B /* VenueDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DB21175B87008C1A3B /* VenueDataProvider.swift */; };
+		95BB85E121175B87008C1A3B /* VenueApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DD21175B87008C1A3B /* VenueApiClient.swift */; };
+		95BB85E221175B87008C1A3B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DE21175B87008C1A3B /* APIClient.swift */; };
+		95BB85E321175B87008C1A3B /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DF21175B87008C1A3B /* APIKey.swift */; };
+		95BB85E621175B90008C1A3B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85E521175B90008C1A3B /* LocationService.swift */; };
 		B042BDF167B31E090DCF89AA /* Pods_PointsOfIntrerest_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F735857672F20FB8AFC91C /* Pods_PointsOfIntrerest_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +58,20 @@
 		95A4ED02211624E500BD46FF /* PlaceInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfoTableViewController.swift; sourceTree = "<group>"; };
 		95A4ED0421163F1A00BD46FF /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		95A4ED072116431E00BD46FF /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		95BB85C621175B33008C1A3B /* FoursquareResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareResponse.swift; sourceTree = "<group>"; };
+		95BB85C721175B33008C1A3B /* MetaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaModel.swift; sourceTree = "<group>"; };
+		95BB85C821175B33008C1A3B /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		95BB85CA21175B33008C1A3B /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		95BB85CB21175B33008C1A3B /* CategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		95BB85CC21175B33008C1A3B /* HoursModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursModel.swift; sourceTree = "<group>"; };
+		95BB85CD21175B33008C1A3B /* PhotoGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGroup.swift; sourceTree = "<group>"; };
+		95BB85CE21175B33008C1A3B /* VenueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
+		95BB85CF21175B33008C1A3B /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		95BB85DB21175B87008C1A3B /* VenueDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDataProvider.swift; sourceTree = "<group>"; };
+		95BB85DD21175B87008C1A3B /* VenueApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueApiClient.swift; sourceTree = "<group>"; };
+		95BB85DE21175B87008C1A3B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		95BB85DF21175B87008C1A3B /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		95BB85E521175B90008C1A3B /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		BF2EF010C3FDEF6C8B5462D0 /* Pods-PointsOfIntrerest App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointsOfIntrerest App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App.debug.xcconfig"; sourceTree = "<group>"; };
 		C4F735857672F20FB8AFC91C /* Pods_PointsOfIntrerest_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PointsOfIntrerest_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,10 +126,13 @@
 		95A4ECE42115AC9B00BD46FF /* PointsOfIntrerest App */ = {
 			isa = PBXGroup;
 			children = (
+				95BB85E421175B90008C1A3B /* Location */,
+				95BB85D921175B87008C1A3B /* Networking */,
+				95BB85C421175B33008C1A3B /* Models */,
 				95A4ECFD21161CB000BD46FF /* SearchScreen */,
 				95A4ED0121161D0E00BD46FF /* PlaceInfoScreen */,
+				95BB85E721175B9E008C1A3B /* Utils */,
 				95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */,
-				9533EDD02116E60900660ED2 /* Constants.swift */,
 				95A4ECE92115AC9B00BD46FF /* Main.storyboard */,
 				95A4ECEE2115AC9D00BD46FF /* LaunchScreen.storyboard */,
 				95A4ECFB211607A800BD46FF /* Assets.xcassets */,
@@ -150,6 +181,81 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		95BB85C421175B33008C1A3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95BB85C821175B33008C1A3B /* Venue.swift */,
+				95BB85C521175B33008C1A3B /* Response */,
+				95BB85C921175B33008C1A3B /* VenueDetails */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95BB85C521175B33008C1A3B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				95BB85C621175B33008C1A3B /* FoursquareResponse.swift */,
+				95BB85C721175B33008C1A3B /* MetaModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		95BB85C921175B33008C1A3B /* VenueDetails */ = {
+			isa = PBXGroup;
+			children = (
+				95BB85CA21175B33008C1A3B /* PhotoModel.swift */,
+				95BB85CB21175B33008C1A3B /* CategoryModel.swift */,
+				95BB85CC21175B33008C1A3B /* HoursModel.swift */,
+				95BB85CD21175B33008C1A3B /* PhotoGroup.swift */,
+				95BB85CE21175B33008C1A3B /* VenueModel.swift */,
+				95BB85CF21175B33008C1A3B /* LocationModel.swift */,
+			);
+			path = VenueDetails;
+			sourceTree = "<group>";
+		};
+		95BB85D921175B87008C1A3B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				95BB85DA21175B87008C1A3B /* DataProvider */,
+				95BB85DC21175B87008C1A3B /* API */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		95BB85DA21175B87008C1A3B /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				95BB85DB21175B87008C1A3B /* VenueDataProvider.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		95BB85DC21175B87008C1A3B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				95BB85DD21175B87008C1A3B /* VenueApiClient.swift */,
+				95BB85DE21175B87008C1A3B /* APIClient.swift */,
+				95BB85DF21175B87008C1A3B /* APIKey.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		95BB85E421175B90008C1A3B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				95BB85E521175B90008C1A3B /* LocationService.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		95BB85E721175B9E008C1A3B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9533EDD02116E60900660ED2 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +268,7 @@
 				95A4ECDF2115AC9B00BD46FF /* Frameworks */,
 				95A4ECE02115AC9B00BD46FF /* Resources */,
 				C239794457989AD5B9449936 /* [CP] Copy Pods Resources */,
+				A9466F57BB813E2CAF0FA306 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +344,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A9466F57BB813E2CAF0FA306 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C239794457989AD5B9449936 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,17 +389,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BB85D121175B33008C1A3B /* MetaModel.swift in Sources */,
+				95BB85D521175B33008C1A3B /* HoursModel.swift in Sources */,
+				95BB85D221175B33008C1A3B /* Venue.swift in Sources */,
 				95A4ECE62115AC9B00BD46FF /* AppDelegate.swift in Sources */,
 				951322F921174391004D0B91 /* PlaceDurationCell.swift in Sources */,
+				95BB85E121175B87008C1A3B /* VenueApiClient.swift in Sources */,
+				95BB85D421175B33008C1A3B /* CategoryModel.swift in Sources */,
+				95BB85E021175B87008C1A3B /* VenueDataProvider.swift in Sources */,
 				95A4ED0521163F1A00BD46FF /* TextCell.swift in Sources */,
+				95BB85D721175B33008C1A3B /* VenueModel.swift in Sources */,
 				9533EDD72116FFFD00660ED2 /* PlaceDescriptionCell.swift in Sources */,
+				95BB85E221175B87008C1A3B /* APIClient.swift in Sources */,
+				95BB85D321175B33008C1A3B /* PhotoModel.swift in Sources */,
 				95A4ED082116431E00BD46FF /* MapCell.swift in Sources */,
 				9533EDD52116EACC00660ED2 /* PlaceNameCell.swift in Sources */,
 				95A4ED03211624E500BD46FF /* PlaceInfoTableViewController.swift in Sources */,
+				95BB85D021175B33008C1A3B /* FoursquareResponse.swift in Sources */,
 				9533EDD12116E60900660ED2 /* Constants.swift in Sources */,
 				9533EDD921170D0600660ED2 /* PlaceTimeOfWorkCell.swift in Sources */,
+				95BB85E321175B87008C1A3B /* APIKey.swift in Sources */,
 				95A4ECF82115ACE600BD46FF /* SearchTableViewController.swift in Sources */,
+				95BB85D621175B33008C1A3B /* PhotoGroup.swift in Sources */,
+				95BB85E621175B90008C1A3B /* LocationService.swift in Sources */,
 				95A4ECFA2115B15600BD46FF /* PlaceTableViewCell.swift in Sources */,
+				95BB85D821175B33008C1A3B /* LocationModel.swift in Sources */,
 				9533EDD32116EA1100660ED2 /* DisplayObjectCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

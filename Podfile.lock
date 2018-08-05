@@ -1,20 +1,28 @@
 PODS:
+  - Alamofire (4.7.3)
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
   - GoogleMaps/Base (2.7.0)
   - GoogleMaps/Maps (2.7.0):
     - GoogleMaps/Base
+  - Kingfisher (4.8.1)
 
 DEPENDENCIES:
+  - Alamofire
   - GoogleMaps
+  - Kingfisher
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - GoogleMaps
+    - Kingfisher
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
 
-PODFILE CHECKSUM: f6e649ad38ee57ad401423254a036e756678164f
+PODFILE CHECKSUM: 3faba9815ef74b6a80a75c2b8f40fe4a3351caed
 
 COCOAPODS: 1.5.3
