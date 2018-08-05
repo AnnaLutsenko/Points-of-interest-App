@@ -30,20 +30,6 @@ class SearchTableViewController: UITableViewController {
         tableView.register(PlaceTableViewCell.self, forCellReuseIdentifier: PlaceTableViewCell.reuseID)
     }
     
-//        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            guard let navController = segue.destination as? UINavigationController,
-//                let vc = navController.topViewController as? PlaceInfoTableViewController else {
-//                    fatalError("DetailViewController")
-//            }
-//            
-//            // Manage the display mode button
-//            vc.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-//            vc.navigationItem.leftItemsSupplementBackButton = true
-//            
-//            // Configure the secondary view controller
-//            vc.venue = venues[index]
-//        }
-    
     // MARK: - Requests
     private func getVenues(_ query: String?) {
         venueDataService.searchVenues(query: query, location: locationService.lastCoordinate) { [weak self] (result) in
