@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951322F921174391004D0B91 /* PlaceDurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951322F821174391004D0B91 /* PlaceDurationCell.swift */; };
 		9533EDD12116E60900660ED2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533EDD02116E60900660ED2 /* Constants.swift */; };
 		9533EDD32116EA1100660ED2 /* DisplayObjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533EDD22116EA1100660ED2 /* DisplayObjectCell.swift */; };
 		9533EDD52116EACC00660ED2 /* PlaceNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533EDD42116EACC00660ED2 /* PlaceNameCell.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		78A3F55977CDB89648CEE213 /* Pods-PointsOfIntrerest App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointsOfIntrerest App.release.xcconfig"; path = "Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App.release.xcconfig"; sourceTree = "<group>"; };
+		951322F821174391004D0B91 /* PlaceDurationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDurationCell.swift; sourceTree = "<group>"; };
 		9533EDD02116E60900660ED2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9533EDD22116EA1100660ED2 /* DisplayObjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayObjectCell.swift; sourceTree = "<group>"; };
 		9533EDD42116EACC00660ED2 /* PlaceNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNameCell.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				9533EDD42116EACC00660ED2 /* PlaceNameCell.swift */,
 				9533EDD62116FFFD00660ED2 /* PlaceDescriptionCell.swift */,
 				9533EDD821170D0600660ED2 /* PlaceTimeOfWorkCell.swift */,
+				951322F821174391004D0B91 /* PlaceDurationCell.swift */,
 				95A4ED0421163F1A00BD46FF /* TextCell.swift */,
 				95A4ED072116431E00BD46FF /* MapCell.swift */,
 			);
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A4ECE62115AC9B00BD46FF /* AppDelegate.swift in Sources */,
+				951322F921174391004D0B91 /* PlaceDurationCell.swift in Sources */,
 				95A4ED0521163F1A00BD46FF /* TextCell.swift in Sources */,
 				9533EDD72116FFFD00660ED2 /* PlaceDescriptionCell.swift in Sources */,
 				95A4ED082116431E00BD46FF /* MapCell.swift in Sources */,

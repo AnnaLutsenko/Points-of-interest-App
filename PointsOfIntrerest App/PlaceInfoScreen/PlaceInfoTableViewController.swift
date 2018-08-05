@@ -23,9 +23,11 @@ class PlaceInfoTableViewController: UITableViewController {
         let name = DisplayName(name: "UTEUT", rating: "9.0", color: .blue)
         let descr = DisplayDescription(description: "son neuon onuohu noun onteuhno eutnouno ontehun unouahcp uchcen forCellReuseIdentifier forCellReuseIdentifier forCellReuseIdentifier forCellReuseIdentifier forCellReuseIdentifier")
         let time = DisplayTimeOfWork(time: "Open from: 10:00 till 20:00")
+        let durationTime = DisplayDurationOfTrip(durationTime: "2 hours")
         objects.append(name)
         objects.append(descr)
         objects.append(time)
+        objects.append(durationTime)
     }
     
     func registerCells() {
@@ -35,6 +37,7 @@ class PlaceInfoTableViewController: UITableViewController {
         tableView.register(PlaceNameCell.self, forCellReuseIdentifier: PlaceNameCell.reuseID)
         tableView.register(PlaceDescriptionCell.self, forCellReuseIdentifier: PlaceDescriptionCell.reuseID)
         tableView.register(PlaceTimeOfWorkCell.self, forCellReuseIdentifier: PlaceTimeOfWorkCell.reuseID)
+        tableView.register(PlaceDurationCell.self, forCellReuseIdentifier: PlaceDurationCell.reuseID)
     }
 
     // MARK: - Table view data source
@@ -59,6 +62,10 @@ class PlaceInfoTableViewController: UITableViewController {
         } else if let time = obj as? DisplayTimeOfWork {
             let dataCell = tableView.dequeueReusableCell(withIdentifier: PlaceTimeOfWorkCell.reuseID) as? PlaceTimeOfWorkCell
             dataCell?.displayData(time)
+            cell = dataCell
+        } else if let durationTime = obj as? DisplayDurationOfTrip {
+            let dataCell = tableView.dequeueReusableCell(withIdentifier: PlaceDurationCell.reuseID) as? PlaceDurationCell
+            dataCell?.displayData(durationTime)
             cell = dataCell
         }
         

@@ -96,8 +96,17 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
             attribute: .bottom,
             multiplier: 1, constant: 8
         )
+        
+        let bottomConstraint = NSLayoutConstraint(
+            item: ratingLbl,
+            attribute: .bottom,
+            relatedBy: .equal,
+            toItem: contentView,
+            attribute: .bottom,
+            multiplier: 1, constant: 8
+        )
         //
-        contentView.addConstraints([centerXConstraint, topConstraint])
+        contentView.addConstraints([centerXConstraint, topConstraint, bottomConstraint])
     }
 
 }
