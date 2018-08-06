@@ -13,6 +13,11 @@
 		9533EDD52116EACC00660ED2 /* PlaceNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533EDD42116EACC00660ED2 /* PlaceNameCell.swift */; };
 		9533EDD72116FFFD00660ED2 /* PlaceDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533EDD62116FFFD00660ED2 /* PlaceDescriptionCell.swift */; };
 		9533EDD921170D0600660ED2 /* PlaceTimeOfWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9533EDD821170D0600660ED2 /* PlaceTimeOfWorkCell.swift */; };
+		9552B7C32117AED00004BB74 /* StoryboardInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552B7C22117AED00004BB74 /* StoryboardInstance.swift */; };
+		9552B7C52117B90C0004BB74 /* DirectionsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552B7C42117B90C0004BB74 /* DirectionsDataProvider.swift */; };
+		9552B7C72117B9160004BB74 /* test_route.json in Resources */ = {isa = PBXBuildFile; fileRef = 9552B7C62117B9160004BB74 /* test_route.json */; };
+		9552B7C92117B96C0004BB74 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552B7C82117B96C0004BB74 /* APIClient.swift */; };
+		9552B7CB2117BA440004BB74 /* GoogleApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552B7CA2117BA440004BB74 /* GoogleApiClient.swift */; };
 		95A4ECE62115AC9B00BD46FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */; };
 		95A4ECEB2115AC9B00BD46FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A4ECE92115AC9B00BD46FF /* Main.storyboard */; };
 		95A4ECF02115AC9D00BD46FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A4ECEE2115AC9D00BD46FF /* LaunchScreen.storyboard */; };
@@ -33,7 +38,7 @@
 		95BB85D821175B33008C1A3B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85CF21175B33008C1A3B /* LocationModel.swift */; };
 		95BB85E021175B87008C1A3B /* VenueDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DB21175B87008C1A3B /* VenueDataProvider.swift */; };
 		95BB85E121175B87008C1A3B /* VenueApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DD21175B87008C1A3B /* VenueApiClient.swift */; };
-		95BB85E221175B87008C1A3B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DE21175B87008C1A3B /* APIClient.swift */; };
+		95BB85E221175B87008C1A3B /* FoursquareAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DE21175B87008C1A3B /* FoursquareAPIClient.swift */; };
 		95BB85E321175B87008C1A3B /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85DF21175B87008C1A3B /* APIKey.swift */; };
 		95BB85E621175B90008C1A3B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85E521175B90008C1A3B /* LocationService.swift */; };
 		95BB85E921178D0D008C1A3B /* VenueSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB85E821178D0D008C1A3B /* VenueSplitViewController.swift */; };
@@ -49,6 +54,11 @@
 		9533EDD42116EACC00660ED2 /* PlaceNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceNameCell.swift; sourceTree = "<group>"; };
 		9533EDD62116FFFD00660ED2 /* PlaceDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDescriptionCell.swift; sourceTree = "<group>"; };
 		9533EDD821170D0600660ED2 /* PlaceTimeOfWorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTimeOfWorkCell.swift; sourceTree = "<group>"; };
+		9552B7C22117AED00004BB74 /* StoryboardInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstance.swift; sourceTree = "<group>"; };
+		9552B7C42117B90C0004BB74 /* DirectionsDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsDataProvider.swift; sourceTree = "<group>"; };
+		9552B7C62117B9160004BB74 /* test_route.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_route.json; sourceTree = "<group>"; };
+		9552B7C82117B96C0004BB74 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9552B7CA2117BA440004BB74 /* GoogleApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleApiClient.swift; sourceTree = "<group>"; };
 		95A4ECE22115AC9B00BD46FF /* PointsOfIntrerest App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PointsOfIntrerest App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A4ECE52115AC9B00BD46FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A4ECEA2115AC9B00BD46FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +81,7 @@
 		95BB85CF21175B33008C1A3B /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		95BB85DB21175B87008C1A3B /* VenueDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDataProvider.swift; sourceTree = "<group>"; };
 		95BB85DD21175B87008C1A3B /* VenueApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueApiClient.swift; sourceTree = "<group>"; };
-		95BB85DE21175B87008C1A3B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		95BB85DE21175B87008C1A3B /* FoursquareAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAPIClient.swift; sourceTree = "<group>"; };
 		95BB85DF21175B87008C1A3B /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		95BB85E521175B90008C1A3B /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		95BB85E821178D0D008C1A3B /* VenueSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueSplitViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				95BB85DB21175B87008C1A3B /* VenueDataProvider.swift */,
+				9552B7C42117B90C0004BB74 /* DirectionsDataProvider.swift */,
+				9552B7C62117B9160004BB74 /* test_route.json */,
 			);
 			path = DataProvider;
 			sourceTree = "<group>";
@@ -239,9 +251,10 @@
 		95BB85DC21175B87008C1A3B /* API */ = {
 			isa = PBXGroup;
 			children = (
+				9552B7CA2117BA440004BB74 /* GoogleApiClient.swift */,
 				95BB85DD21175B87008C1A3B /* VenueApiClient.swift */,
-				95BB85DE21175B87008C1A3B /* APIClient.swift */,
-				95BB85DF21175B87008C1A3B /* APIKey.swift */,
+				9552B7C82117B96C0004BB74 /* APIClient.swift */,
+				95BB85DE21175B87008C1A3B /* FoursquareAPIClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -257,7 +270,9 @@
 		95BB85E721175B9E008C1A3B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				95BB85DF21175B87008C1A3B /* APIKey.swift */,
 				9533EDD02116E60900660ED2 /* Constants.swift */,
+				9552B7C22117AED00004BB74 /* StoryboardInstance.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -324,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A4ECF02115AC9D00BD46FF /* LaunchScreen.storyboard in Resources */,
+				9552B7C72117B9160004BB74 /* test_route.json in Resources */,
 				95A4ECFC211607A800BD46FF /* Assets.xcassets in Resources */,
 				95A4ECEB2115AC9B00BD46FF /* Main.storyboard in Resources */,
 			);
@@ -359,11 +375,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-PointsOfIntrerest App/Pods-PointsOfIntrerest App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -398,18 +416,21 @@
 				95BB85D121175B33008C1A3B /* MetaModel.swift in Sources */,
 				95BB85D521175B33008C1A3B /* HoursModel.swift in Sources */,
 				95BB85D221175B33008C1A3B /* Venue.swift in Sources */,
+				9552B7C32117AED00004BB74 /* StoryboardInstance.swift in Sources */,
 				95A4ECE62115AC9B00BD46FF /* AppDelegate.swift in Sources */,
 				951322F921174391004D0B91 /* PlaceDurationCell.swift in Sources */,
+				9552B7CB2117BA440004BB74 /* GoogleApiClient.swift in Sources */,
 				95BB85E121175B87008C1A3B /* VenueApiClient.swift in Sources */,
 				95BB85D421175B33008C1A3B /* CategoryModel.swift in Sources */,
 				95BB85E021175B87008C1A3B /* VenueDataProvider.swift in Sources */,
 				95A4ED0521163F1A00BD46FF /* TextCell.swift in Sources */,
 				95BB85D721175B33008C1A3B /* VenueModel.swift in Sources */,
 				9533EDD72116FFFD00660ED2 /* PlaceDescriptionCell.swift in Sources */,
-				95BB85E221175B87008C1A3B /* APIClient.swift in Sources */,
+				95BB85E221175B87008C1A3B /* FoursquareAPIClient.swift in Sources */,
 				95BB85D321175B33008C1A3B /* PhotoModel.swift in Sources */,
 				95A4ED082116431E00BD46FF /* MapCell.swift in Sources */,
 				95BB85E921178D0D008C1A3B /* VenueSplitViewController.swift in Sources */,
+				9552B7C52117B90C0004BB74 /* DirectionsDataProvider.swift in Sources */,
 				9533EDD52116EACC00660ED2 /* PlaceNameCell.swift in Sources */,
 				95A4ED03211624E500BD46FF /* PlaceInfoTableViewController.swift in Sources */,
 				95BB85D021175B33008C1A3B /* FoursquareResponse.swift in Sources */,
@@ -423,6 +444,7 @@
 				95A4ECFA2115B15600BD46FF /* PlaceTableViewCell.swift in Sources */,
 				95BB85D821175B33008C1A3B /* LocationModel.swift in Sources */,
 				9533EDD32116EA1100660ED2 /* DisplayObjectCell.swift in Sources */,
+				9552B7C92117B96C0004BB74 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

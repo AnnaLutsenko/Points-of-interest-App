@@ -1,0 +1,301 @@
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "Em7QpdC80LXQu9GM0L3QuNGG0YzQutC1INGI0L7RgdC1LCAxMDcsINCS0ZbQvdC90LjRhtGPLCDQktGW0L3QvdC40YbRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0ZfQvdCwLCAyMTAwMCIaEhgKFAoSCa0kCnZXXC1HETZkmsqssfdLEGs",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJt_BFvUNbLUcR9pKGBfOl3AA",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 49.2437694,
+               "lng" : 28.4934906
+            },
+            "southwest" : {
+               "lat" : 49.2334974,
+               "lng" : 28.4047606
+            }
+         },
+         "copyrights" : "Map data ©2018 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "7.9 km",
+                  "value" : 7921
+               },
+               "duration" : {
+                  "text" : "20 mins",
+                  "value" : 1177
+               },
+               "end_address" : "Zamostianska St, 18г, Vinnytsia, Vinnyts'ka oblast, Ukraine, 21000",
+               "end_location" : {
+                  "lat" : 49.24348149999999,
+                  "lng" : 28.4916739
+               },
+               "start_address" : "Khmel'nyts'ke Hwy, 107, Vinnytsia, Vinnyts'ka oblast, Ukraine, 21000",
+               "start_location" : {
+                  "lat" : 49.2374263,
+                  "lng" : 28.4047606
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "3.4 km",
+                        "value" : 3416
+                     },
+                     "duration" : {
+                        "text" : "8 mins",
+                        "value" : 484
+                     },
+                     "end_location" : {
+                        "lat" : 49.23370629999999,
+                        "lng" : 28.4506777
+                     },
+                     "html_instructions" : "Head \u003cb\u003esoutheast\u003c/b\u003e on \u003cb\u003eХмельницьке ш.\u003c/b\u003e toward \u003cb\u003eБарське ш.\u003c/b\u003e/\u003cb\u003eE583\u003c/b\u003e/\u003cb\u003eМ21\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "}tokHwxjlDRu@Ru@h@sB|@iD`BiGlAsETy@FWFYDUDUPmAbAsHh@eELaAj@eERcBBWBS?O@U@U?e@?m@?qB@iH@yN@_O?wK@s@?wU?_@?yF?y@@qB?{A?}F?iK?uP@aA@U?[@[@W@WBo@d@mIZ{FTqE@Id@yIPkDJ_BD{@FcA@_@@Y?Q?SAUKkFIcDI{DIwC"
+                     },
+                     "start_location" : {
+                        "lat" : 49.2374263,
+                        "lng" : 28.4047606
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.5 km",
+                        "value" : 1470
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 171
+                     },
+                     "end_location" : {
+                        "lat" : 49.2369587,
+                        "lng" : 28.4643817
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eвулиця Магістратська\u003c/b\u003e/\u003cb\u003eE583\u003c/b\u003e/\u003cb\u003eМ21\u003c/b\u003e (signs for \u003cb\u003eФОНТАН \"ROSHEN\"\u003c/b\u003e)",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "u}nkHwwslD[AW?a@?O?gAD{@DgADkCJoBFc@@M@I?GAMAMCMEICIEKEGEIGMKMKIIGIGKIIEIGKEKGMIWmAkD[}@K[GQEOGUG[AOCSAUAWAU?S?Q@O?M@OBe@JqABWl@mHZyD^oEV{CXcD@GNoBTgC@WRaCJiAJeANyAJw@P{APoB"
+                     },
+                     "start_location" : {
+                        "lat" : 49.23370629999999,
+                        "lng" : 28.4506777
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "13 m",
+                        "value" : 13
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 49.2368472,
+                        "lng" : 28.4643442
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eвул. Театральна\u003c/b\u003e/\u003cb\u003eвулиця Магістратська\u003c/b\u003e (signs for \u003cb\u003eУМВС УКРАЇНИ У ВІННИЦЬКІЙ ОБЛАСТІ\u003c/b\u003e)",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "_rokHkmvlDTF"
+                     },
+                     "start_location" : {
+                        "lat" : 49.2369587,
+                        "lng" : 28.4643817
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.2 km",
+                        "value" : 1159
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 171
+                     },
+                     "end_location" : {
+                        "lat" : 49.2340245,
+                        "lng" : 28.4790428
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eвулиця Магістратська\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "iqokHcmvlDLgBJuAJuAJuBFu@@[HaAB_@JsBDwA?aA?U?c@AUC}@EkBGgCa@}K?Q@OBKDUDUHY^mAJYdAgDb@mAfAcDx@gCHSzDaMT{@"
+                     },
+                     "start_location" : {
+                        "lat" : 49.2368472,
+                        "lng" : 28.4643442
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 km",
+                        "value" : 483
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 68
+                     },
+                     "end_location" : {
+                        "lat" : 49.2353868,
+                        "lng" : 28.4852064
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at \u003cb\u003eвул. Соборна\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "s_okH_iylDNGKw@AI_@aC_A{Hq@sE]{BUmA_@oBWqAKy@E_@CO"
+                     },
+                     "start_location" : {
+                        "lat" : 49.2340245,
+                        "lng" : 28.4790428
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "50 m",
+                        "value" : 50
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 15
+                     },
+                     "end_location" : {
+                        "lat" : 49.23553099999999,
+                        "lng" : 28.4858528
+                     },
+                     "html_instructions" : "Continue straight",
+                     "maneuver" : "straight",
+                     "polyline" : {
+                        "points" : "ehokHqozlDAQIs@Oy@"
+                     },
+                     "start_location" : {
+                        "lat" : 49.2353868,
+                        "lng" : 28.4852064
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "15 m",
+                        "value" : 15
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 6
+                     },
+                     "end_location" : {
+                        "lat" : 49.235658,
+                        "lng" : 28.4859263
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e at \u003cb\u003eвул. Брацлавська\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "aiokHqszlDYO"
+                     },
+                     "start_location" : {
+                        "lat" : 49.23553099999999,
+                        "lng" : 28.4858528
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.6 km",
+                        "value" : 646
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 105
+                     },
+                     "end_location" : {
+                        "lat" : 49.2389974,
+                        "lng" : 28.4931664
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eпросп. Коцюбинського\u003c/b\u003e",
+                     "maneuver" : "turn-slight-right",
+                     "polyline" : {
+                        "points" : "{iokHatzlDaAgCm@iB]mBg@iB}@mCu@sB_AcCwAmDiD_Jo@iA"
+                     },
+                     "start_location" : {
+                        "lat" : 49.235658,
+                        "lng" : 28.4859263
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.6 km",
+                        "value" : 553
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 104
+                     },
+                     "end_location" : {
+                        "lat" : 49.2437694,
+                        "lng" : 28.4932047
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eвул. Замостянська\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "w~okHia|lDC_AoCJkFJsGNuABoEL"
+                     },
+                     "start_location" : {
+                        "lat" : 49.2389974,
+                        "lng" : 28.4931664
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 km",
+                        "value" : 116
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 45
+                     },
+                     "end_location" : {
+                        "lat" : 49.24348149999999,
+                        "lng" : 28.4916739
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at \u003cb\u003eвул. Стеценка\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "q|pkHoa|lD@n@h@hELv@"
+                     },
+                     "start_location" : {
+                        "lat" : 49.2437694,
+                        "lng" : 28.4932047
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "}tokHwxjlD|Iy\\d@sCfDaWV{BBc@B_CFyqABaw@DeBfAqSjBa^?uAi@cVeBAwI\\kDJq@Mg@Uo@i@_@i@_@}@}BwGWqAIwA@cAT_D`CsYnBmU~@}ITFLgBVkD^iGNsCDyCEmCMsFa@oLPgAzBiHnDmKzDaMT{@NGKw@a@kC_A{Hq@sEs@iEw@aEW{BYmBYOaAgCm@iB]mBeBwFuBwFaGmOo@iAC_AoCJkFJiJRoEL@n@v@`G"
+         },
+         "summary" : "Хмельницьке ш. and вулиця Магістратська",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

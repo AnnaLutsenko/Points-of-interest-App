@@ -8,13 +8,18 @@
 
 import UIKit
 import CoreLocation
-class PlaceInfoTableViewController: UITableViewController {
+import SVProgressHUD
+
+class PlaceInfoTableViewController: UITableViewController, StoryboardInstance {
     
     /// Services
+    let directionDataProvider = DirectionsDataProvider()
     let venueDataService = VenueDataProvider()
+    let locationService = LocationService()
     
     /// Models
     var objects: [DisplayObject] = []
+    
     var venue: Venue? {
         didSet {
             guard let v = venue else { return }
@@ -26,6 +31,8 @@ class PlaceInfoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
+        fetchData()
+        fetchDirections()
     }
     
     func displayData(for venue: Venue) {
@@ -47,10 +54,36 @@ class PlaceInfoTableViewController: UITableViewController {
         tableView.register(MapCell.self, forCellReuseIdentifier: MapCell.reuseID)
     }
     
+    // MARK: - Requests
+    func fetchDirections() {
+        guard let location = locationService.lastCoordinate,
+            let v = venue else { return }
+        SVProgressHUD.show()
+        directionDataProvider.fetchDirections(from: location, to: v.location) { [weak self] (results) in
+            SVProgressHUD.dismiss()
+            
+            switch results {
+            case .success(let duration):
+                let obj = DisplayDurationOfTrip(durationTime: duration)
+                if let vc = self,
+                 vc.objects.count > 1 {
+                    vc.objects.insert(obj, at: vc.objects.count-1)
+                } else {
+                    self?.objects.insert(obj, at: 0)
+                }
+                self?.tableView.reloadData()
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            }
+        }
+    }
+    
     func fetchData() {
         guard let venue = venue else { return }
-        
+        SVProgressHUD.show()
         venueDataService.getVenueDetails(venueId: venue.model.id) { [weak self] (results) in
+            SVProgressHUD.dismiss()
+            
             switch results {
             case .success(let venue):
                 self?.venue = venue

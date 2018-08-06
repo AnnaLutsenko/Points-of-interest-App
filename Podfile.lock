@@ -6,23 +6,27 @@ PODS:
   - GoogleMaps/Maps (2.7.0):
     - GoogleMaps/Base
   - Kingfisher (4.8.1)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire
   - GoogleMaps
   - Kingfisher
+  - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - GoogleMaps
     - Kingfisher
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 3faba9815ef74b6a80a75c2b8f40fe4a3351caed
+PODFILE CHECKSUM: 1c7c77166aea265b07df11b89ae0b10ede16a6a2
 
 COCOAPODS: 1.5.3

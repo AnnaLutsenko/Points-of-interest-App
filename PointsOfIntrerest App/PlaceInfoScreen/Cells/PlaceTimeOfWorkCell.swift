@@ -46,8 +46,8 @@ class PlaceTimeOfWorkCell: DisplayObjectCell <DisplayTimeOfWork> {
     
     //MARK: - Set Constraints
     private enum Metrics {
-        static let padding: CGFloat = 8.0
-        static let textWidth: CGFloat = UIScreen.main.bounds.size.width - 16
+        static let padding: CGFloat = 16.0
+        static let textWidth: CGFloat = UIScreen.main.bounds.size.width - 32
     }
     
     private func setTimeConstraints() {
@@ -68,7 +68,7 @@ class PlaceTimeOfWorkCell: DisplayObjectCell <DisplayTimeOfWork> {
         allConstraints += topRowHorizontalConstraints
         //
         let summaryHorizontalConstraints = NSLayoutConstraint.constraints(
-            withVisualFormat: "V:|-16-[timeLbl]-padding-|",
+            withVisualFormat: "V:|-padding-[timeLbl]-padding-|",
             metrics: metrics,
             views: views)
         allConstraints += summaryHorizontalConstraints

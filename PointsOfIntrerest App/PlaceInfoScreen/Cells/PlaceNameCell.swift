@@ -30,9 +30,10 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
     
     let nameLbl: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.numberOfLines = 0
         label.textColor = .black
         label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -73,14 +74,14 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
         let metrics = ["padding": 8.0,
                        "textWidth": UIScreen.main.bounds.size.width - 16]
         
-        let centerXConstraint = NSLayoutConstraint(
-            item: nameLbl,
-            attribute: .centerX,
-            relatedBy: .equal,
-            toItem: contentView,
-            attribute: .centerX,
-            multiplier: 1, constant: 0
-        )
+//        let centerXConstraint = NSLayoutConstraint(
+//            item: nameLbl,
+//            attribute: .centerX,
+//            relatedBy: .equal,
+//            toItem: contentView,
+//            attribute: .centerX,
+//            multiplier: 1, constant: 0
+//        )
         
         let centerXConstraint2 = NSLayoutConstraint(
             item: ratingLbl,
@@ -95,9 +96,14 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
             withVisualFormat: "V:|-8-[nameLbl]-[ratingLbl]-8-|",
             metrics: metrics,
             views: views)
+        
+        let summaryHorizontalConstraints = NSLayoutConstraint.constraints(
+            withVisualFormat: "H:|-16-[nameLbl]-16-|",
+            metrics: metrics,
+            views: views)
         //
         allConstraints.append(centerXConstraint2)
-        allConstraints.append(centerXConstraint)
+        allConstraints += summaryHorizontalConstraints
         allConstraints += summaryVerticalConstraints
         contentView.addConstraints(allConstraints)
     }

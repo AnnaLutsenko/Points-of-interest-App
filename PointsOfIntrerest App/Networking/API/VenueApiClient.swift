@@ -8,7 +8,7 @@
 
 import Foundation
 
-class VenueAPIClient: APIClient {
+class VenueAPIClient: FoursquareAPIClient {
     enum Endpoint: String {
         case venues, search
     }

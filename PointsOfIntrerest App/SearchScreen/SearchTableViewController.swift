@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import SVProgressHUD
 
 class SearchTableViewController: UITableViewController {
     
@@ -19,7 +20,6 @@ class SearchTableViewController: UITableViewController {
     
     /// Models
     var venues: [Venue] = []
-    var index = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +32,9 @@ class SearchTableViewController: UITableViewController {
     
     // MARK: - Requests
     private func getVenues(_ query: String?) {
+        SVProgressHUD.show()
         venueDataService.searchVenues(query: query, location: locationService.lastCoordinate) { [weak self] (result) in
-            
+            SVProgressHUD.dismiss()
             switch result {
             case .success(let venues):
                 self?.venues = venues
@@ -69,10 +70,10 @@ class SearchTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        index = indexPath.row
-        if let splitVC = splitViewController as? VenueSplitViewController {
-            splitVC.sentVenueToDetailVC(venues[indexPath.row])
-        }
+        
+        guard let vc = PlaceInfoTableViewController.storyboardInstance(storyboardName: "Main") else {return}
+        vc.venue = venues[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

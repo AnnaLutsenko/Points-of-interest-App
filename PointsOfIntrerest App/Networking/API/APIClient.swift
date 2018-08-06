@@ -10,31 +10,12 @@ import Foundation
 import Alamofire
 
 class APIClient {
-    private struct Keys {
-        static let version = "v"
-        static let clientId = "client_id"
-        static let clientSecret = "client_secret"
-    }
-    
-    private let apiKey: APIKey.Type
-    
     private (set) var requestURL: String
     private (set) var requestParams: [String : Any] = [ : ]
     private (set) var requestMethod: HTTPMethod = .get
     
-    init(apiKey: APIKey.Type = FoursquareAPIKey.self) {
-        self.apiKey = apiKey
-        self.requestURL = apiKey.baseURL
-    }
-    
-    func get() -> Self {
-        self.requestMethod = .get
-        return self
-    }
-    
-    func post() -> Self {
-        self.requestMethod = .post
-        return self 
+    init(baseURL: String) {
+        self.requestURL = baseURL
     }
     
     @discardableResult func addEndpoint(_ endpoint: String, isFinal: Bool = false) -> String {
@@ -47,22 +28,19 @@ class APIClient {
         return self.requestParams
     }
     
-    func withParams(_ params: [String : Any]) -> Self {
-        self.addParams(params)
+    func get() -> Self {
+        self.requestMethod = .get
+        return self
+    }
+    
+    func post() -> Self {
+        self.requestMethod = .post
         return self
     }
     
     func run() -> DataRequest {
-        self.addParams(
-            [
-                Keys.version: apiKey.version,
-                Keys.clientId: apiKey.clientId,
-                Keys.clientSecret: apiKey.clientSecret
-            ]
-        )
         return Alamofire.request(self.requestURL,
                                  method: self.requestMethod,
                                  parameters: self.requestParams)
     }
-    
 }

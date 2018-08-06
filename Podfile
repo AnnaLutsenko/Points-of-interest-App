@@ -9,5 +9,6 @@ target 'PointsOfIntrerest App' do
   pod 'GoogleMaps'
   pod 'Alamofire'
   pod 'Kingfisher'
+  pod 'SVProgressHUD'
 
 end
