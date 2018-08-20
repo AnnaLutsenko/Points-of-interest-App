@@ -74,15 +74,6 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
         let metrics = ["padding": 8.0,
                        "textWidth": UIScreen.main.bounds.size.width - 16]
         
-//        let centerXConstraint = NSLayoutConstraint(
-//            item: nameLbl,
-//            attribute: .centerX,
-//            relatedBy: .equal,
-//            toItem: contentView,
-//            attribute: .centerX,
-//            multiplier: 1, constant: 0
-//        )
-        
         let centerXConstraint2 = NSLayoutConstraint(
             item: ratingLbl,
             attribute: .centerX,
@@ -91,6 +82,8 @@ class PlaceNameCell: DisplayObjectCell <DisplayName> {
             attribute: .centerX,
             multiplier: 1, constant: 0
         )
+        
+        ratingLbl.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         
         let summaryVerticalConstraints = NSLayoutConstraint.constraints(
             withVisualFormat: "V:|-8-[nameLbl]-[ratingLbl]-8-|",
